@@ -1,0 +1,27 @@
+.title {
+  padding-top: 35px; }
+
+.who-am-I {
+  background-color: #7cced2;
+  height: 500px; }
+  .who-am-I .title {
+    color: white; }
+  .who-am-I .about-me {
+    color: white;
+    padding-top: 0;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 20px; }
+    .who-am-I .about-me p {
+      text-align: center; }
+
+.hero-wrapper {
+  background-color: white;
+  height: 100%; }
+  .hero-wrapper .img-wrapper {
+    width: 80%;
+    margin: auto; }
+
+.work {
+  padding-right: 200px;
+  padding-left: 200px; }

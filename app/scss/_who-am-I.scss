@@ -1,0 +1,19 @@
+.who-am-I {
+  background-color: $blue;
+  height: 500px;
+
+  .title {
+    color: white;
+  }
+  .about-me {
+    color: white;
+    padding-top: 0;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+
+    p {
+      text-align: center;
+    }
+  }
+}
