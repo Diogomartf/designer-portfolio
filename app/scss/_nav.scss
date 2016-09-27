@@ -1,0 +1,108 @@
+%b-a {
+  background-color: $black;
+  content: '';
+  height: 4px;
+  position: absolute;
+  right: 0;
+  transition: .25s;
+  width: 40px;
+}
+
+.menu-collapsed {
+  cursor: pointer;
+  height: 36px;
+  padding: 100px;
+  position: fixed;
+  right: 9px;
+  top: 10px;
+  transition: .25s;
+  width: 36px;
+  z-index: 10;
+
+  ul {
+    position: fixed;
+    right: -9000px;
+    transition: 0s;
+  }
+}
+
+.bar {
+  @extend %b-a;
+  position: fixed;
+  right: 24px;
+  top: 36px;
+
+  &::before {
+    @extend %b-a;
+    top: -10px;
+  }
+
+  &::after {
+    @extend %b-a;
+    top: 10px;
+  }
+}
+
+%b-a-expanded {
+  top: 0;
+  transition: .25s;
+}
+
+.menu-expanded {
+  background-color: $white;
+  height: 100%;
+  line-height: 100px;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: .25s;
+  width: 100%;
+
+  ul {
+    position: relative;
+    right: 0;
+    transition: 0s;
+    z-index: 2;
+  }
+
+  a {
+    color: $black;
+    font-size: 4em;
+    padding: 5px;
+    text-decoration: none;
+    transition: .15s;
+
+    &:hover {
+      border-bottom: 4px solid $blue;
+      letter-spacing: 1px;
+      transition: .1s;
+    }
+  }
+
+  .bar {
+    background-color: transparent;
+    transition: .25s;
+
+    &::before {
+      @extend %b-a-expanded;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      @extend %b-a-expanded;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 250px;
+  text-align: center;
+}
+
+p {
+  line-height: 20px;
+  margin: 0 auto;
+  width: 80%;
+}

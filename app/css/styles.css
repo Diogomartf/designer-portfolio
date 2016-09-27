@@ -1,27 +1,131 @@
 .title {
-  padding-top: 35px; }
+  line-height: 150px; }
 
-.who-am-I {
+.bar, .bar::before, .bar::after {
+  background-color: #1b1919;
+  content: '';
+  height: 4px;
+  position: absolute;
+  right: 0;
+  transition: .25s;
+  width: 40px; }
+
+.menu-collapsed {
+  cursor: pointer;
+  height: 36px;
+  padding: 100px;
+  position: fixed;
+  right: 9px;
+  top: 10px;
+  transition: .25s;
+  width: 36px;
+  z-index: 10; }
+  .menu-collapsed ul {
+    position: fixed;
+    right: -9000px;
+    transition: 0s; }
+
+.bar {
+  position: fixed;
+  right: 24px;
+  top: 36px; }
+  .bar::before {
+    top: -10px; }
+  .bar::after {
+    top: 10px; }
+
+.menu-expanded .bar::before, .menu-expanded .bar::after {
+  top: 0;
+  transition: .25s; }
+
+.menu-expanded {
+  background-color: #fff;
+  height: 100%;
+  line-height: 100px;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: .25s;
+  width: 100%; }
+  .menu-expanded ul {
+    position: relative;
+    right: 0;
+    transition: 0s;
+    z-index: 2; }
+  .menu-expanded a {
+    color: #1b1919;
+    font-size: 4em;
+    padding: 5px;
+    text-decoration: none;
+    transition: .15s; }
+    .menu-expanded a:hover {
+      border-bottom: 4px solid #7cced2;
+      letter-spacing: 1px;
+      transition: .1s; }
+  .menu-expanded .bar {
+    background-color: transparent;
+    transition: .25s; }
+    .menu-expanded .bar::before {
+      transform: rotate(45deg); }
+    .menu-expanded .bar::after {
+      transform: rotate(-45deg); }
+
+h1 {
+  font-size: 3em;
+  line-height: 250px;
+  text-align: center; }
+
+p {
+  line-height: 20px;
+  margin: 0 auto;
+  width: 80%; }
+
+.who-am-i {
   background-color: #7cced2;
-  height: 500px; }
-  .who-am-I .title {
-    color: white; }
-  .who-am-I .about-me {
-    color: white;
-    padding-top: 0;
-    padding-right: 200px;
-    padding-left: 200px;
+  max-height: 100%;
+  min-height: 500px; }
+  .who-am-i .title {
+    color: #fff;
+    line-height: 70px; }
+  .who-am-i .about-me {
+    color: #fff;
     padding-bottom: 20px; }
-    .who-am-I .about-me p {
+    .who-am-i .about-me p {
       text-align: center; }
 
 .hero-wrapper {
-  background-color: white;
-  height: 100%; }
+  background-color: #fff;
+  height: 500px; }
   .hero-wrapper .img-wrapper {
-    width: 80%;
-    margin: auto; }
+    margin: auto;
+    width: 80%; }
+    @media (max-width: 767px) {
+      .hero-wrapper .img-wrapper {
+        min-height: 400px;
+        width: 100%; } }
+
+.hero-divider {
+  margin-bottom: -10px; }
 
 .work {
-  padding-right: 200px;
-  padding-left: 200px; }
+  padding-bottom: 100px; }
+
+.call-wrapper {
+  background-color: #f2cc81;
+  height: 550px;
+  position: relative; }
+  .call-wrapper img {
+    position: absolute; }
+  .call-wrapper .call-quote {
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+    .call-wrapper .call-quote h1 {
+      color: #fff;
+      margin: auto; }
+      .call-wrapper .call-quote h1 span {
+        color: #1b1919; }
+
+.footer {
+  background-color: #f2cc81;
+  height: 150px; }

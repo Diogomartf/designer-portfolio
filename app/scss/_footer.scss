@@ -1,0 +1,30 @@
+.call-wrapper {
+  background-color: $yellow;
+  height: 550px;
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+
+  .call-quote {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    h1 {
+      color: $white;
+      margin: auto;
+
+      span {
+        color: $black;
+      }
+    }
+  }
+
+}
+
+.footer {
+  background-color: $yellow;
+  height: 150px;
+}

@@ -1,9 +1,17 @@
 .hero-wrapper {
   background-color: $white;
-  height: 100%;
+  height: 500px;
 
   .img-wrapper {
     margin: auto;
     width: 80%;
+    @media (max-width: $screen-xs-max) {
+      min-height: 400px;
+      width: 100%;
+    }
   }
+}
+
+.hero-divider {
+  margin-bottom: -10px;
 }
