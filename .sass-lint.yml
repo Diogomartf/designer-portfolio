@@ -1,0 +1,7 @@
+linters:
+    Indentation:
+        width: 4
+    PlaceholderInExtend:
+        enabled: false
+    PropertySortOrder:
+        enabled: false
