@@ -90,7 +90,12 @@ p {
   .who-am-i .about-me {
     color: #fff;
     padding-bottom: 20px; }
+    .who-am-i .about-me span {
+      font-size: 24px;
+      font-weight: bold; }
     .who-am-i .about-me p {
+      font-size: 20px;
+      line-height: 1.4em;
       text-align: center; }
 
 .hero-wrapper {
@@ -120,6 +125,11 @@ p {
     height: 100%;
     position: absolute;
     width: 100%; }
+    .call-wrapper .call-quote a {
+      color: #1b1919;
+      font-weight: bold; }
+      .call-wrapper .call-quote a:hover {
+        border-bottom: 5px solid #1b1919; }
     .call-wrapper .call-quote h1 {
       color: #fff;
       margin: auto; }
@@ -128,4 +138,15 @@ p {
 
 .footer {
   background-color: #f2cc81;
-  height: 150px; }
+  height: 150px;
+  width: 100%; }
+  .footer .social {
+    list-style-type: none;
+    margin: auto;
+    padding-top: 50px;
+    width: 350px; }
+    .footer .social li {
+      float: left;
+      padding: 10px; }
+    .footer .social img {
+      width: 50px; }

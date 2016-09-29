@@ -12,6 +12,15 @@
     position: absolute;
     width: 100%;
 
+    a {
+      color: $black;
+      font-weight: bold;
+
+      &:hover {
+        border-bottom: 5px solid $black;
+      }
+    }
+
     h1 {
       color: $white;
       margin: auto;
@@ -27,4 +36,21 @@
 .footer {
   background-color: $yellow;
   height: 150px;
+  width: 100%;
+
+  .social {
+    list-style-type: none;
+    margin: auto;
+    padding-top: 50px;
+    width: 350px;
+
+    li {
+      float: left;
+      padding: 10px;
+    }
+
+    img {
+      width: 50px;
+    }
+  }
 }

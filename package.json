@@ -1,20 +1,16 @@
 {
-  "name": "gulp-materialize-starter",
+  "name": "micas",
   "version": "1.0.0",
-  "description": "simple starter for app with materialize css that uses gulp as a build tool",
+  "description": "Mica's Pimenta portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "/home/jasminasasha/gulp-materialize-starter/.git/"
   },
   "keywords": [
     "gulp",
     "materialize.css"
   ],
-  "author": "animsaj",
+  "author": "Diogo Ferreira",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.12.8",
@@ -27,5 +23,9 @@
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.1.0",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.1"
   }
 }
