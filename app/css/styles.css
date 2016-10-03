@@ -1,8 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+@import 'https://fonts.googleapis.com/css?family=Hind';
+html {
+  font-family: "Source Sans Pro", "Hind", "sans-serif"; }
+
 .title {
+  font-weight: bold;
   line-height: 150px; }
 
 .bar, .bar::before, .bar::after {
-  background-color: #1b1919;
+  background-color: #353131;
   content: '';
   height: 4px;
   position: absolute;
@@ -13,7 +19,7 @@
 .menu-collapsed {
   cursor: pointer;
   height: 36px;
-  padding: 100px;
+  padding: 35px;
   position: fixed;
   right: 9px;
   top: 10px;
@@ -53,15 +59,12 @@
     transition: 0s;
     z-index: 2; }
   .menu-expanded a {
-    color: #1b1919;
-    font-size: 4em;
+    color: #353131;
+    font-size: 3em;
     padding: 5px;
-    text-decoration: none;
-    transition: .15s; }
+    text-decoration: none; }
     .menu-expanded a:hover {
-      border-bottom: 4px solid #7cced2;
-      letter-spacing: 1px;
-      transition: .1s; }
+      border-bottom: 4px solid #7cced2; }
   .menu-expanded .bar {
     background-color: transparent;
     transition: .25s; }
@@ -114,6 +117,8 @@ p {
 
 .work {
   padding-bottom: 100px; }
+  .work .title {
+    color: #353131; }
 
 .call-wrapper {
   background-color: #f2cc81;
@@ -126,15 +131,16 @@ p {
     position: absolute;
     width: 100%; }
     .call-wrapper .call-quote a {
-      color: #1b1919;
-      font-weight: bold; }
+      color: #353131; }
       .call-wrapper .call-quote a:hover {
-        border-bottom: 5px solid #1b1919; }
+        border-bottom: 5px solid #353131; }
     .call-wrapper .call-quote h1 {
       color: #fff;
+      font-weight: bold;
+      letter-spacing: 2px;
       margin: auto; }
       .call-wrapper .call-quote h1 span {
-        color: #1b1919; }
+        color: #353131; }
 
 .footer {
   background-color: #f2cc81;

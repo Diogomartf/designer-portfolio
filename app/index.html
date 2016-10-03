@@ -19,14 +19,14 @@
 </head>
 
 <body>
-  <div class="hero-wrapper">
+  <div class="hero-wrapper section scrollspy" id="home" >
     <div class="menu-collapsed">
       <div class="bar"></div>
           <ul>
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Clients</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#work">Work</a></li>
+             <li><a href="#contact">Contact</a></li>
           </ul>
     </div>
     <div class="img-wrapper">
@@ -37,7 +37,7 @@
     <div class="hero-divider">
       <img src="images/blue-arrow.svg" alt="">
     </div>
-    <div class="who-am-i">
+    <div class="who-am-i section scrollspy" id="about">
       <div class="container">
           <div class="row">
             <div class="col s12">
@@ -62,7 +62,7 @@
       </div>
     </section>
     <section>
-      <div class="work">
+      <div class="work section scrollspy" id="work">
         <div class="container">
           <div class="row">
             <div class="col s12">
@@ -172,41 +172,44 @@
     </div>
   </section>
   <div class="call-wrapper">
-    <img src="images/footer.svg" alt="Micas logo">
+    <img src="images/footer.svg" alt="Micas logo" class="hide-on-small-only">
+    <img src="images/footer-mobile.svg" alt="Micas logo" class="hide-on-med-and-up	">
     <div class="call-quote valign-wrapper">
       <h1 class="valign">Let's work <span class="together"><a href="mailto:micasgp1@gmail.com?subject=Hello!">Together</a>
 </span></h1>
     </div>
   </div>
   <footer>
-    <div class="footer">
-      <ul class="social">
-        <li>
-          <a href="#">
-            <img src="images/facebook-logo-button.svg" alt="Micas facebook" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/instagram-logo.svg" alt="Micas Instagram" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/dribble-logo-button.svg" alt="Micas Dribbble" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/twitter-logo-button.svg" alt="Micas Twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/linkedin-logo-button.svg" alt="Micas Linkedin" />
-          </a>
-        </li>
-      </ul>
+    <div class="footer scrollspy" id="contact" >
+      <div class="container">
+        <ul class="social">
+          <li>
+            <a href="#">
+              <img src="images/facebook-logo-button.svg" alt="Micas facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/instagram-logo.svg" alt="Micas Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/dribble-logo-button.svg" alt="Micas Dribbble" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/twitter-logo-button.svg" alt="Micas Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/linkedin-logo-button.svg" alt="Micas Linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
