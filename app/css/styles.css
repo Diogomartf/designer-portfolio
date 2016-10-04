@@ -3,9 +3,22 @@
 html {
   font-family: "Source Sans Pro", "Hind", "sans-serif"; }
 
+h1 {
+  font-size: 3em;
+  line-height: 250px;
+  text-align: center; }
+
+p {
+  line-height: 20px;
+  margin: 0 auto;
+  width: 90%; }
+
 .title {
   font-weight: bold;
   line-height: 150px; }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.3em; } }
 
 .bar, .bar::before, .bar::after {
   background-color: #353131;
@@ -26,6 +39,12 @@ html {
   transition: .25s;
   width: 36px;
   z-index: 10; }
+  @media (max-width: 767px) {
+    .menu-collapsed {
+      padding-bottom: 30px;
+      padding-left: 60px;
+      padding-right: 50px;
+      padding-top: 30px; } }
   .menu-collapsed ul {
     position: fixed;
     right: -9000px;
@@ -73,44 +92,57 @@ html {
     .menu-expanded .bar::after {
       transform: rotate(-45deg); }
 
-h1 {
-  font-size: 3em;
-  line-height: 250px;
-  text-align: center; }
-
-p {
-  line-height: 20px;
-  margin: 0 auto;
-  width: 80%; }
-
 .who-am-i {
   background-color: #7cced2;
   max-height: 100%;
   min-height: 500px; }
   .who-am-i .title {
     color: #fff;
-    line-height: 70px; }
+    line-height: 5px;
+    padding-bottom: 20px; }
   .who-am-i .about-me {
     color: #fff;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    text-align: center; }
+    .who-am-i .about-me .mini-point {
+      font-size: 14px; }
     .who-am-i .about-me span {
       font-size: 24px;
       font-weight: bold; }
     .who-am-i .about-me p {
-      font-size: 20px;
-      line-height: 1.4em;
-      text-align: center; }
+      font-size: 22px;
+      line-height: 1.33349;
+      margin-top: 29px; }
 
 .hero-wrapper {
   background-color: #fff;
   height: 500px; }
+  @media (max-width: 767px) {
+    .hero-wrapper {
+      height: 360px; } }
   .hero-wrapper .img-wrapper {
     margin: auto;
-    width: 80%; }
+    width: 70%; }
     @media (max-width: 767px) {
       .hero-wrapper .img-wrapper {
-        min-height: 400px;
         width: 100%; } }
+    .hero-wrapper .img-wrapper img {
+      margin-bottom: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 100px; }
+      @media (max-width: 767px) {
+        .hero-wrapper .img-wrapper img {
+          margin-bottom: 15px;
+          margin-top: 100px; } }
+  .hero-wrapper .hero-quote h1 {
+    color: #353131;
+    font-size: 3em;
+    line-height: 70px; }
+    @media (max-width: 767px) {
+      .hero-wrapper .hero-quote h1 {
+        font-size: 1.7em;
+        line-height: 25px; } }
 
 .hero-divider {
   margin-bottom: -10px; }
@@ -124,10 +156,13 @@ p {
   background-color: #f2cc81;
   height: 550px;
   position: relative; }
+  @media (max-width: 767px) {
+    .call-wrapper {
+      height: 220px; } }
   .call-wrapper img {
-    position: absolute; }
+    position: absolute;
+    top: 0; }
   .call-wrapper .call-quote {
-    height: 100%;
     position: absolute;
     width: 100%; }
     .call-wrapper .call-quote a {
@@ -139,6 +174,10 @@ p {
       font-weight: bold;
       letter-spacing: 2px;
       margin: auto; }
+      @media (max-width: 767px) {
+        .call-wrapper .call-quote h1 {
+          font-size: 2.3em;
+          margin-top: 0; } }
       .call-wrapper .call-quote h1 span {
         color: #353131; }
 
@@ -149,10 +188,18 @@ p {
   .footer .social {
     list-style-type: none;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 65px;
     width: 350px; }
+    @media (max-width: 767px) {
+      .footer .social {
+        width: 100%; }
+        .footer .social ul {
+          padding: none; } }
     .footer .social li {
       float: left;
       padding: 10px; }
+      @media (max-width: 767px) {
+        .footer .social li {
+          padding: 3px; } }
     .footer .social img {
       width: 50px; }

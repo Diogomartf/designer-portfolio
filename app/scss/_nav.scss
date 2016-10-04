@@ -19,6 +19,13 @@
   width: 36px;
   z-index: 10;
 
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+
   ul {
     position: fixed;
     right: -9000px;
@@ -90,16 +97,4 @@
       transform: rotate(-45deg);
     }
   }
-}
-
-h1 {
-  font-size: 3em;
-  line-height: 250px;
-  text-align: center;
-}
-
-p {
-  line-height: 20px;
-  margin: 0 auto;
-  width: 80%;
 }

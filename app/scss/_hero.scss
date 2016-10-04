@@ -2,12 +2,40 @@
   background-color: $white;
   height: 500px;
 
+  @media (max-width: $screen-xs-max) {
+    height: 360px;
+  }
+
   .img-wrapper {
     margin: auto;
-    width: 80%;
+    width: 70%;
     @media (max-width: $screen-xs-max) {
-      min-height: 400px;
       width: 100%;
+    }
+
+    img {
+      margin-bottom: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 100px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 15px;
+        margin-top: 100px;
+      }
+    }
+  }
+
+  .hero-quote {
+    h1 {
+      color: $black;
+      font-size: 3em;
+      line-height: 70px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 1.7em;
+        line-height: 25px;
+      }
     }
   }
 }

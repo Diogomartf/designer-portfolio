@@ -5,12 +5,18 @@
 
   .title {
     color: $white;
-    line-height: 70px;
+    line-height: 5px;
+    padding-bottom: 20px;
   }
 
   .about-me {
     color: $white;
     padding-bottom: 20px;
+    text-align: center;
+
+    .mini-point {
+      font-size: 14px;
+    }
 
     span {
       font-size: 24px;
@@ -18,9 +24,10 @@
     }
 
     p {
-      font-size: 20px;
-      line-height: 1.4em;
-      text-align: center;
+      font-size: 22px;
+      line-height: 1.33349;
+      margin-top: 29px;
+
     }
   }
 }

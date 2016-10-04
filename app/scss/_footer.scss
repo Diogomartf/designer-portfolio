@@ -3,12 +3,16 @@
   height: 550px;
   position: relative;
 
+  @media (max-width: $screen-xs-max) {
+    height: 220px;
+  }
+
   img {
     position: absolute;
+    top: 0;
   }
 
   .call-quote {
-    height: 100%;
     position: absolute;
     width: 100%;
 
@@ -26,6 +30,11 @@
       letter-spacing: 2px;
       margin: auto;
 
+      @media (max-width: $screen-xs-max) {
+        font-size: 2.3em;
+        margin-top: 0;
+      }
+
       span {
         color: $black;
       }
@@ -42,12 +51,24 @@
   .social {
     list-style-type: none;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 65px;
     width: 350px;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+
+      ul {
+        padding: none;
+      }
+    }
 
     li {
       float: left;
       padding: 10px;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 3px;
+      }
     }
 
     img {
