@@ -9,8 +9,6 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence').use(gulp);
-var ghPages = require('gulp-gh-pages');
-
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -44,7 +42,7 @@ gulp.task('useref', function() {
 });
 
 gulp.task('imagemin', function() {
-    return gulp.src('app/images/**/*.+(png|jpg|gif|swg)')
+    return gulp.src('app/images/**/*.+(png|jpg|gif|swg|svg)')
       .pipe(cache(imagemin({
           gif: {
               interlaced: true
@@ -70,9 +68,4 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
     runSequence('clean:dist', ['sass', 'useref', 'imagemin', 'fonts'], callback);
-});
-
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
 });
