@@ -190,13 +190,12 @@ p {
   .footer .social {
     list-style-type: none;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 45px;
     text-align: center;
     width: 100%; }
     @media (max-width: 767px) {
       .footer .social {
-        padding-top: 40px;
-        width: 100%; } }
+        padding-top: 40px; } }
     .footer .social a {
       padding: 15px; }
       @media (max-width: 767px) {

@@ -50,13 +50,12 @@
   .social {
     list-style-type: none;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 45px;
     text-align: center;
     width: 100%;
 
     @media (max-width: $screen-xs-max) {
       padding-top: 40px;
-      width: 100%;
     }
 
     a {
