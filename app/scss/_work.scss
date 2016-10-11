@@ -1,6 +1,14 @@
 .work {
   padding-bottom: 100px;
 
+  .card {
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
   .title {
     color: $black;
   }

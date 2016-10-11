@@ -13,7 +13,7 @@ p {
 
 .title {
   font-weight: bold;
-  line-height: 150px; }
+  line-height: 100px; }
   @media (max-width: 767px) {
     .title {
       font-size: 2.3em; } }
@@ -136,7 +136,8 @@ p {
   .hero-wrapper .hero-quote h1 {
     color: #353131;
     font-size: 3em;
-    line-height: 70px; }
+    line-height: 70px;
+    margin-top: 22px; }
     @media (max-width: 767px) {
       .hero-wrapper .hero-quote h1 {
         font-size: 1.7em;
@@ -147,6 +148,10 @@ p {
 
 .work {
   padding-bottom: 100px; }
+  @media (max-width: 767px) {
+    .work .card {
+      margin-left: 16px;
+      margin-right: 16px; } }
   .work .title {
     color: #353131; }
 
