@@ -28,6 +28,10 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-if": "^2.0.1"
+    "gulp-if": "^2.0.1",
+    "imagemin-gifsicle": "^5.1.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^5.2.0"
   }
 }
