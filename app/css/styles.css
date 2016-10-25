@@ -206,10 +206,10 @@ p {
       margin: auto; }
       @media (max-width: 420px) {
         .call-wrapper .call-quote h1 {
-          font-size: 2.1em; } }
+          font-size: 2.5em; } }
       @media (max-width: 330px) {
         .call-wrapper .call-quote h1 {
-          font-size: 2em; } }
+          font-size: 2.1em; } }
       @media (max-width: 280px) {
         .call-wrapper .call-quote h1 {
           font-size: 1.8em;
