@@ -19,6 +19,14 @@ p {
   line-height: 100px;
 
   @media (max-width: $screen-xs-max) {
-    font-size: 2.3em;
+    font-size: 2.1em;
+  }
+
+  @media (max-width: $screen-xs) {
+    font-size: 1.9em;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    font-size: 1.7em;
   }
 }

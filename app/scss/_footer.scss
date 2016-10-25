@@ -3,8 +3,36 @@
   height: 550px;
   position: relative;
 
+  @media (max-width: $screen-lg) {
+    height: 650px;
+  }
+
+  @media (max-width: $screen-md-plus) {
+    height: 550px;
+  }
+
+  @media (max-width: $screen-md) {
+    height: 480px;
+  }
+
+  @media (max-width: $screen-sm-plus) {
+    height: 350px;
+  }
+
+  @media (max-width: $screen-sm) {
+    height: 300px;
+  }
+
   @media (max-width: $screen-xs-max) {
     height: 220px;
+  }
+
+  @media (max-width: $screen-xs) {
+    height: 210px;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    height: 180px;
   }
 
   img {
@@ -31,7 +59,15 @@
       margin: auto;
 
       @media (max-width: $screen-xs-max) {
-        font-size: 2.3em;
+        font-size: 2.1em;
+      }
+
+      @media (max-width: $screen-xs) {
+        font-size: 2em;
+      }
+
+      @media (max-width: $screen-xs-min) {
+        font-size: 1.8em;
         margin-top: 0;
       }
 
@@ -54,12 +90,20 @@
     text-align: center;
     width: 100%;
 
+    @media (max-width: $screen-xs) {
+      padding-top: 0;
+    }
+
     @media (max-width: $screen-xs-max) {
-      padding-top: 40px;
+      padding-top: 40;
     }
 
     a {
       padding: 15px;
+
+      @media (max-width: $screen-xs) {
+        padding: 9px;
+      }
 
       @media (max-width: $screen-xs-max) {
         padding: 10px;
@@ -68,6 +112,10 @@
 
     img {
       width: 50px;
+
+      @media (max-width: $screen-xs) {
+        width: 42px;
+      }
     }
   }
 }
