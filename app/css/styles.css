@@ -24,6 +24,13 @@ p {
     .title {
       font-size: 1.7em; } }
 
+.loader {
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  position: fixed;
+  top: 50%; }
+
 .bar, .bar::before, .bar::after {
   background-color: #353131;
   content: '';
@@ -134,11 +141,13 @@ p {
       margin-bottom: 50px;
       margin-left: 30px;
       margin-right: 30px;
-      margin-top: 100px; }
+      margin-top: 100px;
+      width: 100%; }
       @media (max-width: 420px) {
         .hero-wrapper .img-wrapper img {
           margin-bottom: 15px;
-          margin-top: 160px; } }
+          margin-top: 160px;
+          width: 80%; } }
   .hero-wrapper .hero-quote h1 {
     color: #353131;
     font-size: 3em;
@@ -154,20 +163,30 @@ p {
 
 .work {
   padding-bottom: 100px; }
+  .work .row {
+    padding: 0 50px; }
+    @media (max-width: 420px) {
+      .work .row {
+        padding: 0; } }
+  .work .card-text {
+    padding-top: 75px; }
+    @media (max-width: 420px) {
+      .work .card-text {
+        padding-top: 55px; } }
   @media (max-width: 420px) {
     .work .card {
-      margin-left: 16px;
-      margin-right: 16px; } }
+      margin-left: 0;
+      margin-right: 0; } }
   .work .title {
     color: #353131; }
 
 .call-wrapper {
   background-color: #f2cc81;
-  height: 550px;
+  height: 570px;
   position: relative; }
   @media (max-width: 992px) {
     .call-wrapper {
-      height: 650px; } }
+      height: 600px; } }
   @media (max-width: 868px) {
     .call-wrapper {
       height: 550px; } }

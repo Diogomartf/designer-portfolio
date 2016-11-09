@@ -30,3 +30,11 @@ p {
     font-size: 1.7em;
   }
 }
+
+.loader {
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -21px; // -1 * image height / 2
+  position: fixed;
+  top: 50%;
+}

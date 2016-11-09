@@ -1,10 +1,10 @@
 .call-wrapper {
   background-color: $yellow;
-  height: 550px;
+  height: 570px;
   position: relative;
 
   @media (max-width: $screen-lg) {
-    height: 650px;
+    height: 600px;
   }
 
   @media (max-width: $screen-md-plus) {

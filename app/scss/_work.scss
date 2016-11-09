@@ -1,11 +1,28 @@
 .work {
   padding-bottom: 100px;
 
+  .row {
+    padding: 0 50px;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 0;
+    }
+  }
+
+  .card-text {
+    padding-top: 75px;
+
+    @media (max-width: $screen-xs-max) {
+      padding-top: 55px;
+    }
+  }
+
   .card {
 
     @media (max-width: $screen-xs-max) {
-      margin-left: 16px;
-      margin-right: 16px;
+
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 

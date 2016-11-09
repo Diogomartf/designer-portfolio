@@ -58,6 +58,11 @@ gulp.task('fonts', function() {
       .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('cname', function() {
+    return gulp.src('app/CNAME')
+      .pipe(gulp.dest('dist/'))
+});
+
 gulp.task('clean:dist', function() {
     return  del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
@@ -69,7 +74,7 @@ gulp.task('default', function(callback) {
 });
 
 gulp.task('build', function(callback) {
-    runSequence('clean:dist', ['sass', 'useref', 'imagemin', 'fonts'], callback);
+    runSequence('clean:dist', ['sass', 'useref', 'imagemin', 'fonts', 'cname'], callback);
 });
 
 // File where the favicon markups are stored
