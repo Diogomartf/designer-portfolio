@@ -11,6 +11,8 @@ var del = require('del');
 var runSequence = require('run-sequence').use(gulp);
 var realFavicon = require ('gulp-real-favicon');
 var fs = require('fs');
+var autoprefixer = require('gulp-autoprefixer');
+
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -23,6 +25,7 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss') //Source all files ending with.scss in scss directory and its subdirectories
       .pipe(sass())
+      .pipe(autoprefixer())
       .pipe(gulp.dest('app/css'))
       .pipe(browserSync.reload({
           stream: true

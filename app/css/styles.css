@@ -32,30 +32,47 @@ p {
   top: 50%; }
 
 .line {
-  animation: expand 1s ease-in-out infinite;
+  -webkit-animation: expand 1s ease-in-out infinite;
+          animation: expand 1s ease-in-out infinite;
   border-radius: 10px;
   display: inline-block;
   height: 25px;
   margin: 0 3px;
-  transform-origin: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
   width: 1px; }
   .line:nth-child(1) {
     background: #27ae60; }
   .line:nth-child(2) {
-    animation-delay: 180ms;
+    -webkit-animation-delay: -180ms;
+            animation-delay: -180ms;
     background: #f2cc81; }
   .line:nth-child(3) {
-    animation-delay: 360ms;
+    -webkit-animation-delay: -360ms;
+            animation-delay: -360ms;
     background: #ed6e56; }
   .line:nth-child(4) {
-    animation-delay: 540ms;
+    -webkit-animation-delay: -540ms;
+            animation-delay: -540ms;
     background: #7cced2; }
+
+@-webkit-keyframes expand {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  25% {
+    -webkit-transform: scale(2);
+            transform: scale(2); } }
 
 @keyframes expand {
   0% {
-    transform: scale(1); }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   25% {
-    transform: scale(2); } }
+    -webkit-transform: scale(2);
+            transform: scale(2); } }
 
 .bar, .bar::before, .bar::after {
   background-color: #353131;
@@ -63,6 +80,7 @@ p {
   height: 4px;
   position: absolute;
   right: 0;
+  -webkit-transition: .25s;
   transition: .25s;
   width: 40px; }
 
@@ -73,6 +91,7 @@ p {
   position: fixed;
   right: 9px;
   top: 10px;
+  -webkit-transition: .25s;
   transition: .25s;
   width: 36px;
   z-index: 10; }
@@ -85,6 +104,7 @@ p {
   .menu-collapsed ul {
     position: fixed;
     right: -9000px;
+    -webkit-transition: 0s;
     transition: 0s; }
 
 .bar {
@@ -98,6 +118,7 @@ p {
 
 .menu-expanded .bar::before, .menu-expanded .bar::after {
   top: 0;
+  -webkit-transition: .25s;
   transition: .25s; }
 
 .menu-expanded {
@@ -107,11 +128,13 @@ p {
   right: 0;
   text-align: center;
   top: 0;
+  -webkit-transition: .25s;
   transition: .25s;
   width: 100%; }
   .menu-expanded ul {
     position: relative;
     right: 0;
+    -webkit-transition: 0s;
     transition: 0s;
     z-index: 2; }
   .menu-expanded a {
@@ -123,11 +146,14 @@ p {
       border-bottom: 4px solid #7cced2; }
   .menu-expanded .bar {
     background-color: transparent;
+    -webkit-transition: .25s;
     transition: .25s; }
     .menu-expanded .bar::before {
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
     .menu-expanded .bar::after {
-      transform: rotate(-45deg); }
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
 
 .who-am-i {
   background-color: #7cced2;
