@@ -26,10 +26,36 @@ p {
 
 .loader {
   left: 50%;
-  margin-left: -21px;
-  margin-top: -21px;
+  margin-left: -19px;
+  margin-top: -18px;
   position: fixed;
   top: 50%; }
+
+.line {
+  animation: expand 1s ease-in-out infinite;
+  border-radius: 10px;
+  display: inline-block;
+  height: 25px;
+  margin: 0 3px;
+  transform-origin: center center;
+  width: 1px; }
+  .line:nth-child(1) {
+    background: #27ae60; }
+  .line:nth-child(2) {
+    animation-delay: 180ms;
+    background: #f2cc81; }
+  .line:nth-child(3) {
+    animation-delay: 360ms;
+    background: #ed6e56; }
+  .line:nth-child(4) {
+    animation-delay: 540ms;
+    background: #7cced2; }
+
+@keyframes expand {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(2); } }
 
 .bar, .bar::before, .bar::after {
   background-color: #353131;
