@@ -31,3 +31,19 @@
     }
   }
 }
+
+.stuff {
+  margin: 20px auto;
+  width: 600px;
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+  .chip {
+    background: linear-gradient(200deg, $tomato, $pink);
+    border-radius: 14px;
+    color: $white;
+    margin: 5px;
+  }
+}

@@ -177,6 +177,19 @@ p {
       line-height: 1.33349;
       margin-top: 29px; }
 
+.stuff {
+  margin: 20px auto;
+  width: 600px; }
+  @media (max-width: 420px) {
+    .stuff {
+      width: 100%; } }
+  .stuff .chip {
+    background: -webkit-linear-gradient(250deg, #ed6e56, #f1948b);
+    background: linear-gradient(200deg, #ed6e56, #f1948b);
+    border-radius: 14px;
+    color: #fff;
+    margin: 5px; }
+
 .hero-wrapper {
   background-color: #fff;
   height: 500px; }
