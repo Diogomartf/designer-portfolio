@@ -19,11 +19,32 @@
   width: 36px;
   z-index: 10;
 
+  .social-nav {
+    position: fixed;
+    right: -9000px;
+    transition: 0s;
+
+    img {
+      width: 48px;
+      @media (max-width: $screen-xs) {
+        width: 38px;
+      }
+      @media (max-width: $screen-xs-min) {
+        width: 30px;
+      }
+    }
+  }
+
   @media (max-width: $screen-xs-max) {
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 50px;
     padding-top: 30px;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   ul {
@@ -59,6 +80,9 @@
   background-color: $white;
   height: 100%;
   line-height: 100px;
+  @media (max-width: $screen-xs) {
+    line-height: 80px;
+  }
   right: 0;
   text-align: center;
   top: 0;
@@ -69,6 +93,12 @@
     position: relative;
     right: 0;
     transition: 0s;
+    z-index: 2;
+  }
+
+  .social-nav {
+    position: relative;
+    right: 0;
     z-index: 2;
   }
 
