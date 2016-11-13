@@ -45,10 +45,11 @@
     width: 100%;
 
     a {
+      border-bottom: 5px solid $black;
       color: $black;
 
-      &:hover {
-        border-bottom: 5px solid $black;
+      @media (max-width: $screen-xs-max) {
+        border-bottom: 3px solid $black;
       }
     }
 
