@@ -3,7 +3,27 @@
   height: 570px;
   position: relative;
 
+  @media (max-width: $screen-xl-max) {
+    height: 1600px;
+  }
+
+  @media (max-width: $screen-xl) {
+    height: 1180px;
+  }
+
+  @media (max-width: $screen-xl-min) {
+    height: 850px;
+  }
+
+  @media (max-width: $screen-lg-max) {
+    height: 730px;
+  }
+
   @media (max-width: $screen-lg) {
+    height: 550px;
+  }
+
+  @media (max-width: $screen-lg-min) {
     height: 600px;
   }
 
@@ -43,6 +63,22 @@
   .call-quote {
     position: absolute;
     width: 100%;
+
+    @media (max-width: $screen-xl-max) {
+      font-size: 2.2em;
+    }
+
+    @media (max-width: $screen-xl) {
+      font-size: 1.8em;
+    }
+
+    @media (max-width: $screen-xl-min) {
+      font-size: 1.3em;
+    }
+
+    @media (max-width: $screen-lg-max) {
+      font-size: 1em;
+    }
 
     a {
       border-bottom: 5px solid $black;

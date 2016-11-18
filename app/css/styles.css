@@ -223,15 +223,21 @@ p {
   .hero-wrapper .img-wrapper {
     margin: auto;
     width: 70%; }
-    @media (max-width: 420px) {
+    @media (max-width: 1900px) {
       .hero-wrapper .img-wrapper {
-        width: 100%; } }
+        width: 42%; } }
+    @media (max-width: 1600px) {
+      .hero-wrapper .img-wrapper {
+        width: 52%; } }
+    @media (max-width: 768px) {
+      .hero-wrapper .img-wrapper {
+        width: 80%; } }
     .hero-wrapper .img-wrapper img {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       margin-left: 30px;
       margin-right: 30px;
-      margin-top: 100px;
-      width: 100%; }
+      margin-top: 127px;
+      width: 94%; }
       @media (max-width: 420px) {
         .hero-wrapper .img-wrapper img {
           margin-bottom: 15px;
@@ -273,6 +279,21 @@ p {
   background-color: #f2cc81;
   height: 570px;
   position: relative; }
+  @media (max-width: 4000px) {
+    .call-wrapper {
+      height: 1600px; } }
+  @media (max-width: 3000px) {
+    .call-wrapper {
+      height: 1180px; } }
+  @media (max-width: 2100px) {
+    .call-wrapper {
+      height: 850px; } }
+  @media (max-width: 1900px) {
+    .call-wrapper {
+      height: 730px; } }
+  @media (max-width: 1600px) {
+    .call-wrapper {
+      height: 550px; } }
   @media (max-width: 992px) {
     .call-wrapper {
       height: 600px; } }
@@ -303,6 +324,18 @@ p {
   .call-wrapper .call-quote {
     position: absolute;
     width: 100%; }
+    @media (max-width: 4000px) {
+      .call-wrapper .call-quote {
+        font-size: 2.2em; } }
+    @media (max-width: 3000px) {
+      .call-wrapper .call-quote {
+        font-size: 1.8em; } }
+    @media (max-width: 2100px) {
+      .call-wrapper .call-quote {
+        font-size: 1.3em; } }
+    @media (max-width: 1900px) {
+      .call-wrapper .call-quote {
+        font-size: 1em; } }
     .call-wrapper .call-quote a {
       border-bottom: 5px solid #353131;
       color: #353131; }
