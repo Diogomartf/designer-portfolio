@@ -335,7 +335,7 @@ p {
         font-size: 1.3em; } }
     @media (max-width: 1900px) {
       .call-wrapper .call-quote {
-        font-size: 1em; } }
+        font-size: 1.1em; } }
     .call-wrapper .call-quote a {
       border-bottom: 5px solid #353131;
       color: #353131; }
