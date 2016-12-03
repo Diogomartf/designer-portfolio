@@ -1,18 +1,17 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var del = require('del');
-var runSequence = require('run-sequence').use(gulp);
-var realFavicon = require ('gulp-real-favicon');
-var fs = require('fs');
-var autoprefixer = require('gulp-autoprefixer');
-
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync');
+const useref = require('gulp-useref');
+const gulpIf = require('gulp-if');
+const cssnano = require('gulp-cssnano');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const del = require('del');
+const runSequence = require('run-sequence').use(gulp);
+const realFavicon = require ('gulp-real-favicon');
+const fs = require('fs');
+const autoprefixer = require('gulp-autoprefixer');
+//const uglify = require('gulp-uglify');
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -41,7 +40,6 @@ gulp.task('watch', function() {
 gulp.task('useref', function() {
     return gulp.src('app/*.html') //Source all html files
       .pipe(useref())
-      .pipe(gulpIf('*.js', uglify())) //Minifies only if it is js file
       .pipe(gulpIf('*.css', cssnano())) //Minifies only if it is css file
       .pipe(gulp.dest('dist'))
 });
