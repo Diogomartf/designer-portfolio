@@ -96,15 +96,15 @@
       margin: auto;
 
       @media (max-width: $screen-xs-max) {
-        font-size: 2.5em;
-      }
-
-      @media (max-width: $screen-xs) {
         font-size: 2.1em;
       }
 
-      @media (max-width: $screen-xs-min) {
+      @media (max-width: $screen-xs) {
         font-size: 1.8em;
+      }
+
+      @media (max-width: $screen-xs-min) {
+        font-size: 1.5em;
         margin-top: 0;
       }
 
