@@ -257,7 +257,10 @@ p {
   margin-bottom: -10px; }
 
 .work {
-  padding-bottom: 100px; }
+  padding-bottom: 67px; }
+  @media (max-width: 420px) {
+    .work {
+      padding-bottom: 40px; } }
   .work .row {
     padding: 0 50px; }
     @media (max-width: 420px) {
@@ -293,6 +296,23 @@ p {
       margin-right: 0; } }
   .work .title {
     color: #353131; }
+
+.cta {
+  margin: auto;
+  padding-bottom: 103px;
+  text-align: center;
+  width: 400px; }
+  @media (max-width: 280px) {
+    .cta {
+      width: 100px; } }
+  @media (max-width: 420px) {
+    .cta {
+      padding-bottom: 73px;
+      width: 300px; } }
+  .cta .btn {
+    background: #7cced2;
+    font-weight: 600;
+    width: 70%; }
 
 .call-wrapper {
   background-color: #f2cc81;

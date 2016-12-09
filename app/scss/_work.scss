@@ -1,5 +1,9 @@
 .work {
-  padding-bottom: 100px;
+  padding-bottom: 67px;
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 40px;
+  }
 
   .row {
     padding: 0 50px;
@@ -10,7 +14,6 @@
   }
 
   .card-text {
-
     padding-top: 75px;
 
     @media (max-width: $screen-md) {
@@ -51,9 +54,7 @@
   }
 
   .card {
-
     @media (max-width: $screen-xs-max) {
-
       margin-left: 0;
       margin-right: 0;
     }
@@ -61,5 +62,27 @@
 
   .title {
     color: $black;
+  }
+}
+
+.cta {
+  margin: auto;
+  padding-bottom: 103px;
+  text-align: center;
+  width: 400px;
+
+  @media (max-width: $screen-xs-min) {
+    width: 100px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 73px;
+    width: 300px;
+  }
+
+  .btn {
+    background: $blue;
+    font-weight: 600;
+    width: 70%;
   }
 }
