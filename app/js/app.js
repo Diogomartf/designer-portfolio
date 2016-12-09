@@ -18,6 +18,9 @@ Vue.component('dribbble-shots', {
              <div class="card-text">
                <div v-html="shot.description"></div>
             </div>
+            <div class="dribbble-link">
+              <a class="waves-effect waves-light btn" v-bind:href="shot.html_url" >See on dribbble</a>
+            </div>
            </div>
          </div>
       </div>
@@ -27,7 +30,7 @@ Vue.component('dribbble-shots', {
 
   created: function () {
       $.getJSON('https://api.dribbble.com/v1/users/micasgp/shots?access_token=4711207c3e66afe2c49062a0af81dcc229cd03d795e8a4613b86b6183a5860f5', function(data) {
-        this.shots = data.slice(0,9);;
+        this.shots = data.slice(0,9);
       }.bind(this));
   },
 })

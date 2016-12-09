@@ -10,15 +10,44 @@
   }
 
   .card-text {
+
     padding-top: 75px;
 
-    @media (max-width: $screen-xs-max) {
-      padding-top: 55px;
+    @media (max-width: $screen-md) {
+      padding-top: 35px;
     }
   }
 
   .shot {
+    text-align: center;
     width: 100%;
+
+    .card-reveal {
+      background-color: rgba(8, 7, 7, 0.80);
+
+      .right {
+        color: $white;
+      }
+
+      p {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+
+    .dribbble-link {
+      padding-top: 30px;
+      width: 100%;
+
+      @media (max-width: $screen-md) {
+        padding-top: 20px;
+      }
+
+      .btn {
+        background-color: $dribbble-pink;
+        margin: auto;
+      }
+    }
   }
 
   .card {
