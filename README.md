@@ -2,12 +2,12 @@
 This is a Design Portfolio website made for Micas Pimenta.
 
 Made using:
-- Materialize
 - Sass
 - Es6
 - Vue.js
-- Gulp
+- Gulp starter with materialize
 - Hosted on Surge.sh
+
 
 Check it out:
 http://micaspimenta.pt/
