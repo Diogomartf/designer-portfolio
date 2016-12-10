@@ -19,6 +19,10 @@
     @media (max-width: $screen-md) {
       padding-top: 35px;
     }
+
+    @media (min-width: $screen-md-plus) and (max-width: $screen-lg-min) {
+      padding-top: 15px;
+    }
   }
 
   .shot {

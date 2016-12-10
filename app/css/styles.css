@@ -271,6 +271,9 @@ p {
     @media (max-width: 768px) {
       .work .card-text {
         padding-top: 35px; } }
+    @media (min-width: 868px) and (max-width: 1025px) {
+      .work .card-text {
+        padding-top: 15px; } }
   .work .shot {
     text-align: center;
     width: 100%; }
@@ -333,7 +336,7 @@ p {
   @media (max-width: 1600px) {
     .call-wrapper {
       height: 550px; } }
-  @media (max-width: 992px) {
+  @media (max-width: 1025px) {
     .call-wrapper {
       height: 600px; } }
   @media (max-width: 868px) {
