@@ -1,15 +1,13 @@
-#Gulp starter with materialize.css 
+#Portfolio website
+This is a Design Portfolio website made for Micas Pimenta.
 
-materialize.css and materialize.js included. Fonts referred by cdn, so font folder is empty. On the gulp side
-there are utilities listed bellow
+Made using:
+- Materialize
+- Sass
+- Es6
+- Vue.js
+- Gulp
+- Hosted on Surge.sh
 
-- compile sass
-- live browser reload
-- concat css into one file and minify it
-- concat js into one file and minify it
-- minify images
-- cache minified images
-- send all above into a dist folder + copy fonts
-- clean unused files
-
-Remember to do run the `npm install` command after cloning this repo :) 
+Check it out:
+http://micaspimenta.pt/
